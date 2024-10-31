@@ -2,8 +2,16 @@
 % Please edit documentation in R/svgpatternsimple.R
 \docType{package}
 \name{svgpatternsimple}
+\alias{svgpatternsimple-package}
 \alias{svgpatternsimple}
 \title{svgpatternsimple: A package of parameterised SVG patterns built using \code{minisvg}}
 \description{
-svgpatternsimple: A package of parameterised SVG patterns built using \code{minisvg}
+Generate simple SVG patterns.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://coolbutuseless.github.io/package/svgpatternsimple/,https://github.com/coolbutuseless/svgpatternsimple}
+}
+
 }

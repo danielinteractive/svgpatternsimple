@@ -8,5 +8,5 @@
       </g>
     </pattern>
   </defs>
-  <polygon points="100,200 13.4,150 13.4,50 100,0 186.6,50 186.6,150 100,200" id="hex" stroke="#c0c0c0" fill="url('#stripe')" />
+  <polygon points="100,200 13.4,150 13.4,50 100,0 186.6,50 186.6,150 100,200" id="hex" stroke="#c0c0c0" fill="url(#stripe)" />
 </svg>

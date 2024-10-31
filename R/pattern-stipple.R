@@ -13,7 +13,7 @@
 #'
 #' @import minisvg
 #' @import glue
-#' @importFrom poissoned poisson_disc
+#' @importFrom poissoned poisson2d
 #' @export
 #'
 #'
@@ -63,12 +63,10 @@ create_pattern_stipple <- function(id,
   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   # Generate a bunch of points using the 'poissoned' package
   #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  pts   <- poissoned::poisson_disc(ncols         = ncols,
-                                   nrows         = nrows,
-                                   cell_size     = cell_size,
-                                   k             = 20,
-                                   keep_boundary = TRUE,
-                                   verbose       = FALSE)
+  pts   <- poissoned::poisson2d(w = width,
+                                h = height,
+                                k = 20)
+
   pts$x <- round(pts$x, 2)
   pts$y <- round(pts$y, 2)
 
